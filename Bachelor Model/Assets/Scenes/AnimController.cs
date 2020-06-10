@@ -14,6 +14,8 @@ public class AnimController : MonoBehaviour
     public bool LeftLegUp = false;
     public bool Tasbi7 = false;
     public bool FingerGun = false;
+    public bool ArmChair = false;
+    public bool TwoLegs = false;
     public Animator Anim;
     public float MoveSpeed = 5f;
     public float RunSpeed = 25f;
@@ -29,6 +31,14 @@ public class AnimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
+         if(Input.GetKey(KeyCode.M)){ 
+            TwoLegs = !TwoLegs;
+            Anim.SetBool("TwoLegs",TwoLegs);
+        }
+        if(Input.GetKey(KeyCode.N)){
+            ArmChair = !ArmChair;
+            Anim.SetBool("ArmChair",ArmChair);
+        }
          if(Input.GetKey(KeyCode.B)){
             FingerGun = !FingerGun;
             Anim.SetBool("FingerGun",FingerGun);
