@@ -30,22 +30,31 @@ public class AnimController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {    
+        if(Input.GetKey(KeyCode.Z)){
+            Anim.SetTrigger("TwoFistClench");
+            // TwoFistClench = !TwoFistClench;
+            // Anim.SetBool("TwoFistClench",TwoFistClench);
+        } 
          if(Input.GetKey(KeyCode.M)){ 
-            TwoLegs = !TwoLegs;
-            Anim.SetBool("TwoLegs",TwoLegs);
+            Anim.SetTrigger("LegMotion");
+            // TwoLegs = !TwoLegs;
+            // Anim.SetBool("TwoLegs",TwoLegs);
         }
         if(Input.GetKey(KeyCode.N)){
-            ArmChair = !ArmChair;
-            Anim.SetBool("ArmChair",ArmChair);
+            Anim.SetTrigger("ArmChair");
+            // ArmChair = !ArmChair;
+            // Anim.SetBool("ArmChair",ArmChair);
         }
          if(Input.GetKey(KeyCode.B)){
-            FingerGun = !FingerGun;
-            Anim.SetBool("FingerGun",FingerGun);
-        }
+            Anim.SetTrigger("FingerGun");
+        //     FingerGun = !FingerGun;
+        //     Anim.SetBool("FingerGun",FingerGun);
+         }
          if(Input.GetKey(KeyCode.V)){
-            Tasbi7 = !Tasbi7;
-            Anim.SetBool("Tasbi7",Tasbi7);
+            Anim.SetTrigger("Tasbi7");
+            // Tasbi7 = !Tasbi7;
+            // Anim.SetBool("Tasbi7",Tasbi7);
         }
         if(Input.GetKey(KeyCode.C)){
             LeftLegUp = !LeftLegUp;
@@ -55,10 +64,7 @@ public class AnimController : MonoBehaviour
             RightLegUp = !RightLegUp;
             Anim.SetBool("RightLegUp",RightLegUp);
         }
-        if(Input.GetKey(KeyCode.Z)){
-            TwoFistClench = !TwoFistClench;
-            Anim.SetBool("TwoFistClench",TwoFistClench);
-        } 
+       
         if(Input.GetKey(KeyCode.D)){
             LeftClench = !LeftClench;
             Anim.SetBool("LeftClench",LeftClench);

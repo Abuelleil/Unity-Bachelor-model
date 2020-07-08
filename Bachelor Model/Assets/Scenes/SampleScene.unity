@@ -437,6 +437,13 @@ MonoBehaviour:
   Combat: 0
   ClenchIndex: 0
   LeftClench: 0
+  TwoFistClench: 0
+  RightLegUp: 0
+  LeftLegUp: 0
+  Tasbi7: 0
+  FingerGun: 0
+  ArmChair: 0
+  TwoLegs: 0
   Anim: {fileID: 905582365}
   MoveSpeed: 5
   RunSpeed: 25
@@ -522,13 +529,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: -0.9659258, z: 0, w: 0.2588191}
-  m_LocalPosition: {x: 3.79, y: 2.24, z: 1.61}
+  m_LocalRotation: {x: 0.24184473, y: -0.66446304, z: 0.24184473, w: 0.66446304}
+  m_LocalPosition: {x: 2.361, y: 3.945, z: -0.514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -150, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: -90, z: 0}
 --- !u!1 &976338136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8293479669820714348, guid: d2f66582c89dd564f879efe0b6ad3e67,
@@ -552,6 +559,13 @@ MonoBehaviour:
   Combat: 0
   ClenchIndex: 1
   LeftClench: 0
+  TwoFistClench: 0
+  RightLegUp: 0
+  LeftLegUp: 0
+  Tasbi7: 0
+  FingerGun: 0
+  ArmChair: 0
+  TwoLegs: 0
   Anim: {fileID: 905582365}
   MoveSpeed: 5
   RunSpeed: 25
